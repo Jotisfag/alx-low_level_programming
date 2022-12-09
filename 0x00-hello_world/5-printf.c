@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	puts("With proper grammar, but the outcome is a piece of art,\n");
-	puts("With proper grammar, but the outcome is a piece of art,\n");
+	putf("With proper grammar, but the outcome is a piece of art,\n");
+	putf("With proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
 
