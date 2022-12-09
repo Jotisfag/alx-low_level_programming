@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - print alphabet in lower case and upper case
- * Return:0 no error, non zero if error
+ * main - print alphabet in lower and upper case
+ * Return: Always 0
  */
 int main(void)
 {
-	char i;
-	char j;
+	char ch;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(i;)
+		putchar(ch;)
 	}
 
-	for (j = 'A'; j <= 'Z'; j++)
+	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
 		putchar(ch);
 	}
