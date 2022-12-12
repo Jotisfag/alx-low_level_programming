@@ -1,21 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - print alphabet in lower and upper case
+ * main - print alphabet
  * Return: Always 0
  */
 int main(void)
 {
-	char ch;
+	char dennis;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (dennis = 'a'; dennish <= 'z'; dennis++)
 	{
-		putchar(ch;)
+		putchar(dennis;)
 	}
 
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	for (dennis = 'A'; dennis <= 'Z'; dennis++)
 	{
-		putchar(ch);
+		putchar(dennis);
 	}
 
 	putchar('\n')
