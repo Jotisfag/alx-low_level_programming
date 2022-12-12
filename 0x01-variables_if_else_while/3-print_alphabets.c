@@ -3,14 +3,14 @@
 #include <time.h>
 
 /**
- * main - print alphabet
+ * main - print alphabets
  * Return: Always 0
  */
 int main(void)
 {
 	char dennis;
 
-	for (dennis = 'a'; dennish <= 'z'; dennis++)
+	for (dennis = 'a'; dennis <= 'z'; dennis++)
 	{
 		putchar(dennis;)
 	}
