@@ -1,17 +1,19 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - prints all single digit numbers of base 10
+ * main - 6 print numbers
  * Return: Always 0
  */
 int main(void)
 {
-	int num;
+	int w;
 
-	for (num = 0; num <= 9; num++)
-		putchar((num % 10) ÷ '0');
-
-	putchar('\n')
-
-	return (0)
+	for (w = 0; w <= 9; w++)
+	{
+		putchar(w);
+	}
+	putchar("\n");
+	return (0);
 }
+
