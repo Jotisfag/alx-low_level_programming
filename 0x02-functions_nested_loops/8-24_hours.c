@@ -2,8 +2,8 @@
 
 /**
  * jack_baue - function that prints every minute of the day of Jack Bauer
- *
- * Return: Always 0.
+ * Description: prints every minutes of the day of Jack bauer
+ * Return: Always 0
  */
 void jack_bauer(void)
 {
@@ -21,5 +21,6 @@ void jack_bauer(void)
 			_putchar('\n');
 		}
 	}
+	return (0);
 }
 
