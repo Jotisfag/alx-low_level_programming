@@ -1,14 +1,22 @@
 #include "main.h"
 
 /**
- * _isalpha - checkes for alphabets
- * @c: character to be checked
- * Return: 1 if character is a letteer, 0 otherwise
+ * _isalpha - check for char alphabet
+ * @c: thee char is to be checked
+ * Return: 1 if char is lowercase or uppercase, otherwise 0
  */
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	else
-		return (0);
+	char okeke, christ;
+	int big = 0;
+
+	for (okeke = 'a'; okeke <= 'z'; okeke++)
+	{
+		for (christ = 'A'; christ <= 'Z'; christ++)
+		{
+			if (c == okeke || c == christ)
+				big = 1;
+		}
+	}
+	return (big);
 }
