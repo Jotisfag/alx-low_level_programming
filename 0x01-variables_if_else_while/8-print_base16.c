@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - print base 16
+ * main - print_base 16
  * Return: 0
  */
 
