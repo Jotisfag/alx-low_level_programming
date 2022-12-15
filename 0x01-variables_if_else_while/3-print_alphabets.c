@@ -1,26 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
  * main - print alphabets
  * Return: Always 0
  */
 int main(void)
 {
-	char dennis;
+char christiana;
+for (christiana = 'a'; christiana <= 'z'; christiana++)
+{
+putchar(christiana);
+}
+for (christiana = 'A'; christiana <= 'Z'; christiana++)
+{
+putchar(christiana);
+}
+putchar('\n');
+return (0);
 
-	for (dennis = 'a'; dennis <= 'z'; dennis++)
-	{
-		putchar(dennis;)
-	}
-
-	for (dennis = 'A'; dennis <= 'Z'; dennis++)
-	{
-		putchar(dennis);
-	}
-
-	putchar('\n')
-
-	return (0)
 }
