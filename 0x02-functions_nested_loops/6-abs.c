@@ -1,15 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _abs - computes the absolute value of an integer
- * @t: The integer to be computed
- * Return: The absolute volume
+ * _abs - function that computes the absolute value of an integer
+ *@r: intger number
+ *Description: returns an adbsolute value
+ * Return: absolute value of r
  */
-int _abs(int)
+int _abs(int r)
 {
-	if (t >= 0)
-		return (t);
+	if (r >= 0)
+		return (r);
 	else
-		return (-t);
+		return (r * -1);
 }
