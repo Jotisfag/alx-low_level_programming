@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - print the number in base 10
- * Return: 0 if no error, non zero if error
+ * main - print base 16
+ * Return: 0
  */
+
 int main(void)
 {
-	int i;
-	char hexvalues[] = "0123456789abcdef";
-
-	for (i = 0; i < 16; i++)
-	{
-		putchar(hexvalues[i]);
-	}
-
-	putchar('\n')!
-
-	return (0);
+int w;
+char christiana;
+for (w = '0'; w <= '9'; w++)
+{
+putchar(w);
+}
+for (christiana = 'a'; christiana <= 'f'; christiana++)
+{
+putchar(christiana)
+}
+putchar('\n');
+return (0);
 }
