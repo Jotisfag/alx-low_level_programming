@@ -2,7 +2,7 @@
 
 /**
  * times_table - function that print the 9 times table starting with 0
- * Description: print the 9 times tabel
+ * Description: print the 9 times tabele
  * Return: nothing
  */
 void times_table(void)
@@ -12,15 +12,19 @@ void times_table(void)
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
-		_putchar(' ');
-
-		prod = num * mult;
-
-		if (prod <= 9)
+		for (mult = 1; mult <= 9; mult++)
+		{
+			_putchar(',');
 			_putchar(' ');
-		else
-			_putchar((prod / 10) + '0');
-		_putchar((prod % 10) + '0');
+
+			prod = num * mult;
+
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + '0');
+			_putchar((prod % 10) + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
