@@ -1,1 +1,2 @@
-0x03. C - Debugging
+#!/bin/bash
+This directory contains everything about debugging
