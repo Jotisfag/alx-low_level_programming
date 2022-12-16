@@ -1,40 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100, followed by a new line
- * but for multiples of three prints Fizz instead of the number
- * and for the multiples of five prints Buzz
+ * print_triangle - for printing a triangle in the terminal
  * Return: Always 0 (Success)
+ * @size: THe size of the triangle
  */
-int main(void)
-{
-	int i;
 
-	for (i = 1; i <= 100; i++)
+void print_triangle(int size)
+{
+	int symbol, index;
+
+	if (size > 0)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
+		for (symbol = 1; symbol <= size; symbol++)
 		{
-			printf(" Fizz");
-		}
-		else if (i % 5 == 0 && i % 3 != 0)
-		{
-			printf(" Buzz");
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf(" FizzBuzz");
-		}
-		else if (i == 1)
-		{
-			printf("%d", i);
-		}
-		else
-		{
-			printf(" %d", i);
+			for (index = size - symbol; index > 0; index--)
+				_putchar(' ');
+			for (index = 0; index < symbol; index++)
+				_putchar('#');
+			if (symbol == size)
+				continue;
+			_putchar('\n');
 		}
 	}
-	printf("\n");
-
-	return (0);
+	_putchar('\n');
 }
