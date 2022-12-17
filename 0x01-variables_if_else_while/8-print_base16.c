@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - print_base 16
+ * main - print base 16
  * Return: 0
  */
 
@@ -17,9 +17,8 @@ putchar(w);
 }
 for (christiana = 'a'; christiana <= 'f'; christiana++)
 {
-putchar(christiana)
+putchar(christiana);
 }
 putchar('\n');
 return (0);
-
 }
