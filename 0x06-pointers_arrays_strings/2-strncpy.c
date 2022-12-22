@@ -2,7 +2,7 @@
 
 /**
  * _strncpy - for copying two strings
- * @src: second pointer
+ * @dest: pointer
  * @src: second pointer
  * @n: variable for integer
  * Return: dest
