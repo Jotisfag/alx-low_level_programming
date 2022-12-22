@@ -13,14 +13,19 @@ char *cap_string(char *string)
 	for (a = 0; string[a] != '\0'; a++)
 	{
 		if (string[a] == ' ' || string[a] == '\t' || string[a] == '\n'
-			|| string[a] == '.' || string[a] == ',' || string[a] == '!'
-			|| string[a] == '?' || string[a] == '"' || string[a] == '('
-			|| string[a] == ')' || string[a] == '{' || string[a] == '}')
+				|| string[a] == '.' || string[a] == ',' || string[a] == '!'
+				|| string[a] == '?' || string[a] == '"' || string[a] == '('
+				|| string[a] == ')' || string[a] == '{' || string[a] == '}')
 		{
 			a++;
+			if (string[a] >= 'A' && string[a] <= 'Z')
+				a++;
+			else if (string[a] >= 'a' && string[a] <= 'z')
+				string[a] = string[a] - 32;
+			a--;
 		}
 		else if (string[0] >= 'a' && string[0] <= 'z')
 			string[0] = string[0] - 32;
 	}
 	return (string);
-}
+,}
