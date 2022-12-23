@@ -28,4 +28,4 @@ char *cap_string(char *string)
 			string[0] = string[0] - 32;
 	}
 	return (string);
-,}
+}
